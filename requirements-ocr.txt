@@ -1,0 +1,10 @@
+# OCR environment (PaddleOCR 3.x, PP-OCRv6). Keep separate from the torch environments.
+# Install paddlepaddle-gpu following https://www.paddlepaddle.org.cn/en/install/quick for your CUDA version.
+paddlepaddle-gpu
+paddleocr>=3.0
+pillow
+numpy
+tqdm
+matplotlib
+# optional, for CER/WER in the spot-check
+jiwer

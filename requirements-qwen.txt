@@ -1,0 +1,13 @@
+# QWEN environment: Qwen2.5-VL LoRA / QLoRA training and evaluation
+# Install torch first for your CUDA version: https://pytorch.org/get-started/locally/
+torch>=2.2
+transformers>=4.49
+peft
+accelerate
+bitsandbytes
+qwen-vl-utils
+pillow
+numpy
+pyyaml
+tqdm
+matplotlib

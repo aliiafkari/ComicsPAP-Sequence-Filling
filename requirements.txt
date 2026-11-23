@@ -1,0 +1,14 @@
+# MAIN environment: data prep, visual features, text embeddings, fusion models, plots
+# Install torch first for your CUDA version: https://pytorch.org/get-started/locally/
+torch>=2.2
+torchvision
+numpy
+pyyaml
+pyarrow
+pandas
+pillow
+tqdm
+matplotlib
+transformers>=4.45
+sentence-transformers
+pytest
