@@ -1,0 +1,20 @@
+# Column mapping from YOUR parquet schema -> canonical manifest.
+# Run scripts/01_inspect_dataset.py first, then edit this file.
+# Any key left as null is auto-detected from the candidate names in scripts/02_prepare_manifest.py.
+columns:
+  sample_id: null          # e.g. sample_id / id
+  context: null            # list of 4 context panel images (e.g. context / panels)
+  candidates: null         # list of 6 candidate images (e.g. options / candidates)
+  label: null              # index of correct candidate (e.g. solution_index / label / answer)
+  missing_position: null   # index of the gap in the 5-panel window (e.g. index / missing_index)
+  book_id: null            # optional (e.g. book / series / comic_id)
+  task_type: null          # optional; used to keep only sequence filling
+
+# If task_type exists, keep only rows whose value contains this string (case-insensitive).
+task_filter: "sequence"
+
+# Index conventions in the SOURCE data. The manifest is always written zero-based.
+label_base: 0              # set 1 if labels are 1..6
+missing_position_base: 0   # set 1 if positions are 1..5
+num_context: 4
+num_candidates: 5      # was 6
