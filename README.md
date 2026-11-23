@@ -26,8 +26,6 @@ This repository contains a full, reproducible pipeline and the experiments built
 - [Caveats](#caveats)
 - [Hardware notes](#hardware-notes)
 - [Troubleshooting](#troubleshooting)
-- [Citation, license, acknowledgements](#citation-license-acknowledgements)
-
 ---
 
 ## Task and data
@@ -304,18 +302,3 @@ Developed on a single **RTX 3070 (8 GB)** under Windows. Tips:
 | notebook says `scripts/ not found` | start Jupyter from the repository root |
 
 ---
-
-## Citation, license, acknowledgements
-
-- Please cite the ComicsPAP benchmark paper and the dataset when using this code (add the BibTeX from the dataset page here).
-- Models used: [DINOv2](https://github.com/facebookresearch/dinov2), [CLIP](https://github.com/openai/CLIP), [SigLIP](https://huggingface.co/google/siglip-base-patch16-224), [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL).
-- Code license: *TBD, add a `LICENSE` file (e.g. MIT or Apache-2.0)*. The dataset and model weights keep their own licenses.
-
-```bibtex
-@misc{afkari_comicspap_2026,
-  author = {Afkari-Fahandari, Ali},
-  title  = {ComicsPAP sequence filling: frozen encoders, OCR and Qwen2.5-VL},
-  year   = {2026},
-  note   = {GitHub repository}
-}
-```
